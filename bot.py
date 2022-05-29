@@ -74,15 +74,15 @@ async def info(event):
   await event.reply("**Merhaba Benim Ve Sahibim Hakkında Bilgi\n\nPython: 3.8.2\nKütüphanem: Telethon\n\nSahibim:  Gruplarınızda Üyeleri Etiketlemek için Yaratılmışım**",
                     buttons=(
                       [
-                       Button.url('Beni Grubuna Ekle ➕', 'https://t.me/Startaggerbot?startgroup=a')
+                       Button.url('Beni Grubuna Ekle ➕', 'https://t.me/LordTaggerBot?startgroup=a')
                       ],
                       [
-                       Button.url('📢 Kanal', 'https://t.me/StarBotKanal'),
-                       Button.url('🇹🇷 Sahibim', 'https://t.me/Hayiboo')
+                       Button.url('📢 Blog Kanal', 'https://t.me/TEAMABASOFX),
+                       Button.url('🇹🇷 Sahibim', 'https://t.me/TTteamabasof')
                       ],
                       [
-                       Button.url('🧑🏻‍💻 ɢɪᴛʜᴜʙ ᴋᴀʏɴᴀᴋ ᴋᴏᴅᴜ 🧑🏻‍💻', 'https://github.com/MehmetAtes21/Tagger')
-                      ],
+                       Button.url("Komutlar", data="komutlar")
+                    
                     ),
                     link_preview=False
                    )
@@ -100,17 +100,17 @@ async def start(event):
   if event.is_private:
     async for usr in client.iter_participants(event.chat_id):
      ad = f"[{usr.first_name}](tg://user?id={usr.id}) "
-     await client.send_message(-1001752620477, f"ℹ️ **Yeni Kullanıcı -** {ad}")
+     await client.send_message(-1001764158607, f"ℹ️ **Yeni Kullanıcı -** {ad}")
      return await event.reply(f"**Merhaba \nGrubunuzdakı Üyeleri Etiketleye Bilirim\nKomutlar için Komutlar Düğmesine Tıklaya Bilirsiz**", buttons=(
                       [
                        Button.inline("Komutlar", data="komutlar")
                       ],
                       [
-                       Button.url('Beni Grubuna Ekle', 'https://t.me/StartaggerBot?startgroup=a'),
-                       Button.url('Kanal', 'https://t.me/StarBotKanal')
+                       Button.url('Beni Grubuna Ekle', 'https://t.me/LordTaggerBot?startgroup=a'),
+                       Button.url('Blog Kanal', 'https://t.me/TEAMABASOFX)
                       ],
                       [
-                       Button.url('Sahibim', 'https://t.me/Hayiboo')
+                       Button.url('Sahibim', 'https://t.me/TTteamabasof')
                       ],
                     ),
                     link_preview=False)
